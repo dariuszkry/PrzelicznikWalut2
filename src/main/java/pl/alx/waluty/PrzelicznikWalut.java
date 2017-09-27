@@ -67,7 +67,7 @@ public class PrzelicznikWalut {
 	private void initialize() {
 		frmPrzelicznik = new JFrame();
 		frmPrzelicznik.setFont(new Font("Dialog", Font.PLAIN, 32));
-		frmPrzelicznik.setTitle("Przelicznik");
+		frmPrzelicznik.setTitle("Przelicznik walut");
 		frmPrzelicznik.setBounds(100, 100, 794, 380);
 		frmPrzelicznik.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
