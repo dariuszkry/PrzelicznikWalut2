@@ -37,6 +37,7 @@ public class PrzelicznikKonsola {
 			
 			System.out.println(kwota + " PLN " + " = "
 					+ waluta.przeliczPlnNaWalute(kwota) + " " + kod);
+			sc.nextLine();
 		}
 	}
 }
