@@ -102,7 +102,7 @@ public class PrzelicznikWalut {
 		textField_kwotaWZlotych.setFont(new Font("Dialog", Font.PLAIN, 24));
 		textField_kwotaWZlotych.setColumns(10);
 		
-		JButton btn_PlnNaWalute = new JButton("⬆");
+		JButton btn_PlnNaWalute = new JButton("\u2b06");// 2b06   ⬆
 		btn_PlnNaWalute.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ev) {
 				przelicz(Kierunek.PLN_NA_WALUTE, textField_kwotaWZlotych, textField_kwotaWWalucie);
