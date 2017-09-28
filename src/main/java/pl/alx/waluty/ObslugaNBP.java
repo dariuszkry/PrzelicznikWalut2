@@ -27,6 +27,9 @@ public class ObslugaNBP {
 		return tabelaZXml(doc);
 	}
 	
+	// TODO  dodac metode pobierzTabeleDlaDaty(data)
+	
+	
 	private static Document wczytajXmlZAdresu(String adres) {
 		try {
 			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
