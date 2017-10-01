@@ -20,14 +20,17 @@ import org.xml.sax.SAXException;
 
 public class ObslugaNBP {
 	
+	private static final String ADRES_NBP = "http://api.nbp.pl/api/exchangerates/tables/A";
+
 	public static Tabela pobierzAktualnaTabele() {
-		Document doc = wczytajXmlZAdresu(
-				"http://api.nbp.pl/api/exchangerates/tables/A?format=xml");
-		
+		Document doc = wczytajXmlZAdresu(ADRES_NBP + "?format=xml");		
 		return tabelaZXml(doc);
 	}
 	
-	// TODO  dodac metode pobierzTabeleDlaDaty(data)
+	public static Tabela pobierzTabeleZDnia(String data) {
+		Document doc = wczytajXmlZAdresu(ADRES_NBP + "/" + data + "?format=xml");		
+		return tabelaZXml(doc);
+	}
 	
 	
 	private static Document wczytajXmlZAdresu(String adres) {

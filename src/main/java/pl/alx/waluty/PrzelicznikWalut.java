@@ -187,9 +187,9 @@ public class PrzelicznikWalut {
 		} catch (Exception e) {
 			dokad.setText("błąd");
 			dokad.setForeground(KOLOR_BLAD);
+			e.printStackTrace();
 		}
 	}
-	
 	
 	private enum Kierunek {
 		PLN_NA_WALUTE, WALUTA_NA_PLN;
