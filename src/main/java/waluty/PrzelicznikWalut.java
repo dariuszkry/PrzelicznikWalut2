@@ -1,4 +1,4 @@
-package pl.alx.waluty;
+package waluty;
 
 import java.awt.Color;
 import java.awt.EventQueue;

@@ -1,4 +1,4 @@
-package pl.alx.waluty;
+package waluty;
 
 import java.time.LocalDate;
 import java.util.Collection;

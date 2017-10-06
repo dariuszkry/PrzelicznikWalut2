@@ -1,4 +1,4 @@
-package pl.alx.waluty;
+package waluty;
 
 import java.math.BigDecimal;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package pl.alx.waluty;
+package waluty;
 
 import java.io.IOException;
 import java.io.InputStream;

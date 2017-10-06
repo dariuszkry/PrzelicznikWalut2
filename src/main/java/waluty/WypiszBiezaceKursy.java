@@ -1,4 +1,4 @@
-package pl.alx.waluty;
+package waluty;
 
 public class WypiszBiezaceKursy {
 
