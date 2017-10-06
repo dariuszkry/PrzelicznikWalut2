@@ -27,8 +27,8 @@
 				</configuration>
 			</plugin>
 
-			<!-- Takiej konfiguracji powinniśmy użyć, aby Maven utworzył "jar with dependencies"
-			czyli jednego jar-a, który zawiera wszystkie biblioteki. -->
+			<!-- Takiej konfiguracji powinniśmy użyć, aby Maven utworzył "jar with 
+				dependencies" czyli jednego jar-a, który zawiera wszystkie biblioteki. -->
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<version>2.5.2</version>
@@ -44,6 +44,7 @@
 								<descriptorRef>jar-with-dependencies</descriptorRef>
 							</descriptorRefs>
 							<appendAssemblyId>false</appendAssemblyId>
+							<finalName>program</finalName>
 							<archive>
 								<manifest>
 									<mainClass>waluty.PrzelicznikWalut</mainClass>
@@ -55,4 +56,12 @@
 			</plugin>
 		</plugins>
 	</build>
+	<dependencies>
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>42.1.4</version>
+			<scope>runtime</scope>
+		</dependency>
+	</dependencies>
 </project>
