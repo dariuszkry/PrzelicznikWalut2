@@ -21,7 +21,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>pl.alx.waluty.PrzelicznikWalut</mainClass>
+							<mainClass>waluty.PrzelicznikWalut</mainClass>
 						</manifest>
 					</archive>
 				</configuration>

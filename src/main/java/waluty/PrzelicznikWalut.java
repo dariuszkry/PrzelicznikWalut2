@@ -33,6 +33,7 @@ public class PrzelicznikWalut {
 	public static void main(String[] args) {
 		PrzelicznikWalut window = new PrzelicznikWalut();
 		
+		// To wykona wątek EDT
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
