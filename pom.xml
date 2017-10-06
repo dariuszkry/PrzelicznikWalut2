@@ -26,6 +26,33 @@
 					</archive>
 				</configuration>
 			</plugin>
+
+			<!-- Takiej konfiguracji powinniśmy użyć, aby Maven utworzył "jar with dependencies"
+			czyli jednego jar-a, który zawiera wszystkie biblioteki. -->
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.5.2</version>
+				<executions>
+					<execution>
+						<id>create-executable-jar</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<descriptorRefs>
+								<descriptorRef>jar-with-dependencies</descriptorRef>
+							</descriptorRefs>
+							<appendAssemblyId>false</appendAssemblyId>
+							<archive>
+								<manifest>
+									<mainClass>waluty.PrzelicznikWalut</mainClass>
+								</manifest>
+							</archive>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 </project>
